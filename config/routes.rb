@@ -5,9 +5,11 @@ Rails.application.routes.draw do
   # root "articles#index"
   
   namespace :api do
-    get '/creator-roles', to: 'apis#creator_roles'
     get '/platforms', to: 'apis#platforms'
     get '/consoles', to: 'apis#consoles'
+    get '/console-details', to: 'apis#console_details'
+    get '/games', to: 'apis#games'
+    get '/game-details', to: 'apis#game_details'
   end
 
 end
