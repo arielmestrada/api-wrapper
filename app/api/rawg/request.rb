@@ -1,6 +1,6 @@
 module Rawg
     class Request
-        TOKEN = '737a53f30d6c402bbbde0f1750197d36'
+        TOKEN = Rails.application.credentials[:rawg_token]
         BASE_URL = 'https://api.rawg.io/api'
 
         def self.call(http_method, endpoint)
