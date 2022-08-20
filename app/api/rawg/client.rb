@@ -7,12 +7,8 @@ module Rawg
             'games',
             'game_details']
 
-            if resource == nil && id == nil
-                puts 'Enter a resource:'
-                resource_list.each do |r|
-                    puts r
-                end
-                return
+            if resource == nil && id == nil                
+                return resource_list
             end
 
             case resource
